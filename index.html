@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Piano - キーボードで弾ける電子ピアノ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Claude Piano</h1>
+            <p>キーボードで弾ける電子ピアノ</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="soundType">音色選択:</label>
+                <select id="soundType">
+                    <option value="synth">Synth Lead</option>
+                    <option value="pad">Pad</option>
+                    <option value="bass">Bass</option>
+                    <option value="arpeggio">Arpeggio</option>
+                    <option value="fx">FX</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="volume">音量:</label>
+                <input type="range" id="volume" min="0" max="100" value="70">
+                <span id="volumeValue">70</span>%
+            </div>
+
+            <div class="control-group">
+                <label for="reverb">リバーブ:</label>
+                <input type="range" id="reverb" min="0" max="100" value="30">
+            </div>
+
+            <div class="control-group">
+                <label for="delay">ディレイ:</label>
+                <input type="range" id="delay" min="0" max="100" value="20">
+            </div>
+        </div>
+
+        <div class="visualizer">
+            <canvas id="visualizer-canvas"></canvas>
+            <div id="frequency-display">音の可視化エリア</div>
+        </div>
+
+        <div class="piano-container">
+            <div class="piano-keyboard">
+                <div class="piano-key" data-key="a" data-note="C4">
+                    <span class="key-label">A</span>
+                    <span class="note-label">C4</span>
+                </div>
+                <div class="piano-key" data-key="s" data-note="D4">
+                    <span class="key-label">S</span>
+                    <span class="note-label">D4</span>
+                </div>
+                <div class="piano-key" data-key="d" data-note="E4">
+                    <span class="key-label">D</span>
+                    <span class="note-label">E4</span>
+                </div>
+                <div class="piano-key" data-key="f" data-note="F4">
+                    <span class="key-label">F</span>
+                    <span class="note-label">F4</span>
+                </div>
+                <div class="piano-key" data-key="g" data-note="G4">
+                    <span class="key-label">G</span>
+                    <span class="note-label">G4</span>
+                </div>
+                <div class="piano-key" data-key="h" data-note="A4">
+                    <span class="key-label">H</span>
+                    <span class="note-label">A4</span>
+                </div>
+                <div class="piano-key" data-key="j" data-note="B4">
+                    <span class="key-label">J</span>
+                    <span class="note-label">B4</span>
+                </div>
+                <div class="piano-key" data-key="k" data-note="C5">
+                    <span class="key-label">K</span>
+                    <span class="note-label">C5</span>
+                </div>
+                <div class="piano-key" data-key="l" data-note="D5">
+                    <span class="key-label">L</span>
+                    <span class="note-label">D5</span>
+                </div>
+                <div class="piano-key" data-key=";" data-note="E5">
+                    <span class="key-label">;</span>
+                    <span class="note-label">E5</span>
+                </div>
+                <div class="piano-key" data-key="'" data-note="F5">
+                    <span class="key-label">'</span>
+                    <span class="note-label">F5</span>
+                </div>
+                <div class="piano-key" data-key="\\" data-note="G5">
+                    <span class="key-label">\\</span>
+                    <span class="note-label">G5</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="recording-controls">
+            <button id="record-btn">演奏録音</button>
+            <button id="play-btn" disabled>再生</button>
+            <button id="stop-btn" disabled>停止</button>
+            <button id="download-btn" disabled>ダウンロード</button>
+        </div>
+
+        <div class="instructions">
+            <h3>使い方</h3>
+            <p>A, S, D, F, G, H, J, K, L, ;, ', \\ のキーを押して演奏してください</p>
+            <p>最大8音まで同時に演奏できます</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
