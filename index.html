@@ -48,54 +48,119 @@
         </div>
 
         <div class="piano-container">
-            <div class="piano-keyboard">
-                <div class="piano-key" data-key="a" data-note="C4">
-                    <span class="key-label">A</span>
-                    <span class="note-label">C4</span>
+            <!-- 上段（高音域）C5-B5 -->
+            <div class="piano-octave upper">
+                <div class="octave-label">上段 (C5-B5)</div>
+                <div class="piano-keyboard">
+                    <!-- 白鍵 -->
+                    <div class="piano-key white" data-key="q" data-note="C5">
+                        <span class="key-label">Q</span>
+                        <span class="note-label">C</span>
+                    </div>
+                    <div class="piano-key white" data-key="w" data-note="D5">
+                        <span class="key-label">W</span>
+                        <span class="note-label">D</span>
+                    </div>
+                    <div class="piano-key white" data-key="e" data-note="E5">
+                        <span class="key-label">E</span>
+                        <span class="note-label">E</span>
+                    </div>
+                    <div class="piano-key white" data-key="r" data-note="F5">
+                        <span class="key-label">R</span>
+                        <span class="note-label">F</span>
+                    </div>
+                    <div class="piano-key white" data-key="t" data-note="G5">
+                        <span class="key-label">T</span>
+                        <span class="note-label">G</span>
+                    </div>
+                    <div class="piano-key white" data-key="y" data-note="A5">
+                        <span class="key-label">Y</span>
+                        <span class="note-label">A</span>
+                    </div>
+                    <div class="piano-key white" data-key="u" data-note="B5">
+                        <span class="key-label">U</span>
+                        <span class="note-label">B</span>
+                    </div>
+                    
+                    <!-- 黒鍵 -->
+                    <div class="piano-key black" data-key="1" data-note="C#5" style="left: 35px;">
+                        <span class="key-label">1</span>
+                        <span class="note-label">C#</span>
+                    </div>
+                    <div class="piano-key black" data-key="2" data-note="D#5" style="left: 85px;">
+                        <span class="key-label">2</span>
+                        <span class="note-label">D#</span>
+                    </div>
+                    <div class="piano-key black" data-key="3" data-note="F#5" style="left: 185px;">
+                        <span class="key-label">3</span>
+                        <span class="note-label">F#</span>
+                    </div>
+                    <div class="piano-key black" data-key="4" data-note="G#5" style="left: 235px;">
+                        <span class="key-label">4</span>
+                        <span class="note-label">G#</span>
+                    </div>
+                    <div class="piano-key black" data-key="5" data-note="A#5" style="left: 285px;">
+                        <span class="key-label">5</span>
+                        <span class="note-label">A#</span>
+                    </div>
                 </div>
-                <div class="piano-key" data-key="s" data-note="D4">
-                    <span class="key-label">S</span>
-                    <span class="note-label">D4</span>
-                </div>
-                <div class="piano-key" data-key="d" data-note="E4">
-                    <span class="key-label">D</span>
-                    <span class="note-label">E4</span>
-                </div>
-                <div class="piano-key" data-key="f" data-note="F4">
-                    <span class="key-label">F</span>
-                    <span class="note-label">F4</span>
-                </div>
-                <div class="piano-key" data-key="g" data-note="G4">
-                    <span class="key-label">G</span>
-                    <span class="note-label">G4</span>
-                </div>
-                <div class="piano-key" data-key="h" data-note="A4">
-                    <span class="key-label">H</span>
-                    <span class="note-label">A4</span>
-                </div>
-                <div class="piano-key" data-key="j" data-note="B4">
-                    <span class="key-label">J</span>
-                    <span class="note-label">B4</span>
-                </div>
-                <div class="piano-key" data-key="k" data-note="C5">
-                    <span class="key-label">K</span>
-                    <span class="note-label">C5</span>
-                </div>
-                <div class="piano-key" data-key="l" data-note="D5">
-                    <span class="key-label">L</span>
-                    <span class="note-label">D5</span>
-                </div>
-                <div class="piano-key" data-key=";" data-note="E5">
-                    <span class="key-label">;</span>
-                    <span class="note-label">E5</span>
-                </div>
-                <div class="piano-key" data-key="'" data-note="F5">
-                    <span class="key-label">'</span>
-                    <span class="note-label">F5</span>
-                </div>
-                <div class="piano-key" data-key="\\" data-note="G5">
-                    <span class="key-label">\\</span>
-                    <span class="note-label">G5</span>
+            </div>
+
+            <!-- 下段（低音域）C4-B4 -->
+            <div class="piano-octave lower">
+                <div class="octave-label">下段 (C4-B4)</div>
+                <div class="piano-keyboard">
+                    <!-- 白鍵 -->
+                    <div class="piano-key white" data-key="z" data-note="C4">
+                        <span class="key-label">Z</span>
+                        <span class="note-label">C</span>
+                    </div>
+                    <div class="piano-key white" data-key="x" data-note="D4">
+                        <span class="key-label">X</span>
+                        <span class="note-label">D</span>
+                    </div>
+                    <div class="piano-key white" data-key="c" data-note="E4">
+                        <span class="key-label">C</span>
+                        <span class="note-label">E</span>
+                    </div>
+                    <div class="piano-key white" data-key="v" data-note="F4">
+                        <span class="key-label">V</span>
+                        <span class="note-label">F</span>
+                    </div>
+                    <div class="piano-key white" data-key="b" data-note="G4">
+                        <span class="key-label">B</span>
+                        <span class="note-label">G</span>
+                    </div>
+                    <div class="piano-key white" data-key="n" data-note="A4">
+                        <span class="key-label">N</span>
+                        <span class="note-label">A</span>
+                    </div>
+                    <div class="piano-key white" data-key="m" data-note="B4">
+                        <span class="key-label">M</span>
+                        <span class="note-label">B</span>
+                    </div>
+                    
+                    <!-- 黒鍵 -->
+                    <div class="piano-key black" data-key="a" data-note="C#4" style="left: 35px;">
+                        <span class="key-label">A</span>
+                        <span class="note-label">C#</span>
+                    </div>
+                    <div class="piano-key black" data-key="s" data-note="D#4" style="left: 85px;">
+                        <span class="key-label">S</span>
+                        <span class="note-label">D#</span>
+                    </div>
+                    <div class="piano-key black" data-key="d" data-note="F#4" style="left: 185px;">
+                        <span class="key-label">D</span>
+                        <span class="note-label">F#</span>
+                    </div>
+                    <div class="piano-key black" data-key="f" data-note="G#4" style="left: 235px;">
+                        <span class="key-label">F</span>
+                        <span class="note-label">G#</span>
+                    </div>
+                    <div class="piano-key black" data-key="g" data-note="A#4" style="left: 285px;">
+                        <span class="key-label">G</span>
+                        <span class="note-label">A#</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +174,8 @@
 
         <div class="instructions">
             <h3>使い方</h3>
-            <p>A, S, D, F, G, H, J, K, L, ;, ', \\ のキーを押して演奏してください</p>
+            <p><strong>白鍵:</strong> Q,W,E,R,T,Y,U (上段) / Z,X,C,V,B,N,M (下段)</p>
+            <p><strong>黒鍵:</strong> 1,2,3,4,5 (上段) / A,S,D,F,G (下段)</p>
             <p>最大8音まで同時に演奏できます</p>
         </div>
     </div>

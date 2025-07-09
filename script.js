@@ -11,20 +11,39 @@ class ClaudePiano {
         this.recordingStartTime = null;
         this.pressedKeys = new Set();
         
-        // キーマッピング
+        // キーマッピング - 修正版
         this.keyMap = {
-            'a': { note: 'C4', frequency: 261.63 },
-            's': { note: 'D4', frequency: 293.66 },
-            'd': { note: 'E4', frequency: 329.63 },
-            'f': { note: 'F4', frequency: 349.23 },
-            'g': { note: 'G4', frequency: 392.00 },
-            'h': { note: 'A4', frequency: 440.00 },
-            'j': { note: 'B4', frequency: 493.88 },
-            'k': { note: 'C5', frequency: 523.25 },
-            'l': { note: 'D5', frequency: 587.33 },
-            ';': { note: 'E5', frequency: 659.25 },
-            "'": { note: 'F5', frequency: 698.46 },
-            '\\': { note: 'G5', frequency: 783.99 }
+            // 下段（低音域）- 白鍵
+            'z': { note: 'C4', frequency: 261.63, type: 'white' },
+            'x': { note: 'D4', frequency: 293.66, type: 'white' },
+            'c': { note: 'E4', frequency: 329.63, type: 'white' },
+            'v': { note: 'F4', frequency: 349.23, type: 'white' },
+            'b': { note: 'G4', frequency: 392.00, type: 'white' },
+            'n': { note: 'A4', frequency: 440.00, type: 'white' },
+            'm': { note: 'B4', frequency: 493.88, type: 'white' },
+            
+            // 下段（低音域）- 黒鍵
+            'a': { note: 'C#4', frequency: 277.18, type: 'black' },
+            's': { note: 'D#4', frequency: 311.13, type: 'black' },
+            'd': { note: 'F#4', frequency: 369.99, type: 'black' },
+            'f': { note: 'G#4', frequency: 415.30, type: 'black' },
+            'g': { note: 'A#4', frequency: 466.16, type: 'black' },
+            
+            // 上段（高音域）- 白鍵
+            'q': { note: 'C5', frequency: 523.25, type: 'white' },
+            'w': { note: 'D5', frequency: 587.33, type: 'white' },
+            'e': { note: 'E5', frequency: 659.25, type: 'white' },
+            'r': { note: 'F5', frequency: 698.46, type: 'white' },
+            't': { note: 'G5', frequency: 783.99, type: 'white' },
+            'y': { note: 'A5', frequency: 880.00, type: 'white' },
+            'u': { note: 'B5', frequency: 987.77, type: 'white' },
+            
+            // 上段（高音域）- 黒鍵
+            '1': { note: 'C#5', frequency: 554.37, type: 'black' },
+            '2': { note: 'D#5', frequency: 622.25, type: 'black' },
+            '3': { note: 'F#5', frequency: 739.99, type: 'black' },
+            '4': { note: 'G#5', frequency: 830.61, type: 'black' },
+            '5': { note: 'A#5', frequency: 932.33, type: 'black' }
         };
         
         this.init();
